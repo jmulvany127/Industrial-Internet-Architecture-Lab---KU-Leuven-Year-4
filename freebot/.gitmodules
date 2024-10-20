@@ -1,0 +1,6 @@
+[submodule "boards"]
+	path = boards
+	url = git@gitlab.kuleuven.be:distrinet/education/software-for-real-time-control/freebot/board.git
+[submodule "lib/freebot"]
+	path = lib/freebot
+	url = git@gitlab.kuleuven.be:distrinet/education/software-for-real-time-control/freebot/lib.git

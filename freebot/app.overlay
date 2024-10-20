@@ -1,0 +1,15 @@
+/ {
+    chosen {
+        zephyr,entropy = &cryptocell;
+        nordic,nus-uart = &uart0;
+    };
+};
+
+&cryptocell {
+    status = "okay";
+};
+/*
+&uart1 {
+    status = "okay";
+};
+ */

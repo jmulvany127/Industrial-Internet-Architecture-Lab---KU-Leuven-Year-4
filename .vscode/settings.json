@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./internet_gateway",
+        "./modules"
+    ]
+}

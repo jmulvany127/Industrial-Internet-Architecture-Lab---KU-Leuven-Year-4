@@ -1,0 +1,22 @@
+# Top-most EditorConfig file
+root = true
+
+[*]
+# Block-level indentation uses spaces
+indent_style = space
+indent_size = 4
+# Unix-style line endings should be used
+end_of_line = lf
+# All files should end with a newline character
+insert_final_newline = true
+# There should be no trailing spaces on any lines
+trim_trailing_whitespace = true
+
+# Follow Makefile spec.
+[{Makefile,*.mk}]
+indent_style = tab
+
+# Follow PEP8
+[*.py]
+indent_style = space
+indent_size = 4
