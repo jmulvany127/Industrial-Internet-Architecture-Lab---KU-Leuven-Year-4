@@ -1,8 +1,8 @@
 ## Industrial Internet Architecture Lab - KU Leuven Year 4
 Project involved the control of motors and monitoring of sensors of a small RC buggy. 
-Project team was split into two groups, one handling the embedded NRF52840 and the transfer of data to the NRF52840 over blue-tooth while my team controlled the higher level buggy control and sensor monitoring ran on a raspberry PI and a laptop.
+Project team was split into two groups, one handling the embedded NRF52840 and the transfer of data to the NRF52840 over blue-tooth while my team controlled the higher level buggy control and sensor monitoring programmes ran on both the onboard raspberry PI and a laptop.
 
-A python programme sends publishes encrypted controls for the buggy to an MQTT server, a seperate application running on the onboard rasperry PI is subscribed to the controls topic and recieves these commands via a push notifcation.
+A python programme generates a UI within which users can cntrol the buggy movement, these controls are then encrypted and published to an MQTT server, a seperate application running on the onboard rasperry PI is subscribed to the controls topic and recieves these commands via a push notifcation.
 
 The raspberry pi programme then passes these commands through the local bluetooth gateway which process them before sending to the nrf52840 device which control the wheel motors. 
 
