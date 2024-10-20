@@ -26,6 +26,7 @@ def on_connect(client, userdata, flags, rc, properties=None):
 # Create an MQTT client instance
 mqtt_client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
 
+#certs removed for safety reasons
 mqtt_client.tls_set(ca_certs='../certs/ca/Mosquitto.org certificate.crt',
                     certfile='../certs/client/raspberrypi/raspberrypi-client.crt', keyfile='../certs/client/raspberrypi/client.key')
 
